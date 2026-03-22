@@ -90,25 +90,7 @@ button {
 
 /* печатающийся текст */
 .love-text {
-    font-size: 28px;
-    max-width: 90%;
-    padding: 20px;
-    line-height: 1.6;
-}
-
-/* сердечки */
-.heart-fall {
-    position: absolute;
-    color: rgba(255,255,255,0.7);
-    animation: fall linear infinite;
-}
-
-@keyframes fall {
-    0% { transform: translateY(-10px); }
-    100% { transform: translateY(100vh); }
-}
-</style>
-@media (max-width: 600px) {
+    @media (max-width: 600px) {
     img {
         width: 90%;
     }
@@ -126,6 +108,19 @@ button {
         padding: 14px 28px;
     }
 }
+
+/* сердечки */
+.heart-fall {
+    position: absolute;
+    color: rgba(255,255,255,0.7);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-10px); }
+    100% { transform: translateY(100vh); }
+}
+</style>
 </head>
 
 <body>
@@ -135,7 +130,7 @@ button {
 <div class="container" id="main">
     <img src="your-photo.jpg" class="photo" id="photo">
 
-    <h1>А красивая девочка Кира соскучилась ты по мне?</h1>
+    <h1>А красивая девочка Кира соскучилась по мне?</h1>
 
     <div class="buttons">
         <button id="yes">Да 💖</button>
